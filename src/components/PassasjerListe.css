@@ -1,0 +1,167 @@
+/* === PASSASJERLISTE === */
+
+.pl-side {
+  min-height: 100vh;
+  background: #060d1a;
+  color: #e8e0c8;
+  font-family: "Arial", sans-serif;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.pl-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pl-tittel {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #f0c040;
+  text-transform: uppercase;
+}
+
+.pl-undertittel {
+  font-size: 0.95rem;
+  color: #8fa3be;
+  margin-top: 6px;
+  letter-spacing: 0.04em;
+}
+
+.pl-grupper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Gruppe-kort */
+.pl-gruppe {
+  background: #0a1628;
+  border: 1px solid #1e3a5f;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pl-gruppe-header {
+  background: #1a1a2e;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1e3a5f;
+}
+
+.pl-destinasjon {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.pl-by {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f0c040;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pl-kode {
+  font-size: 0.85rem;
+  color: #8fa3be;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.pl-flyinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.pl-flytnr {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e8e0c8;
+  letter-spacing: 0.05em;
+}
+
+.pl-gate {
+  font-size: 0.8rem;
+  color: #38bdf8;
+}
+
+.pl-antall {
+  font-size: 0.75rem;
+  color: #8fa3be;
+}
+
+/* Tabell */
+.pl-tabell {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pl-tabell thead tr {
+  background: #0d1f3c;
+}
+
+.pl-tabell th {
+  padding: 10px 16px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8fa3be;
+  font-weight: 600;
+  text-align: left;
+}
+
+.pl-th-nr {
+  width: 36px;
+  text-align: center !important;
+}
+
+.pl-tabell tbody tr {
+  border-top: 1px solid #132340;
+  transition: background 0.15s;
+}
+
+.pl-tabell tbody tr:hover {
+  background: #0d1f3c;
+}
+
+.pl-nr {
+  text-align: center;
+  color: #8fa3be;
+  font-size: 0.85rem;
+  padding: 11px 16px;
+}
+
+.pl-navn {
+  padding: 11px 16px;
+  font-size: 0.95rem;
+  color: #e8e0c8;
+}
+
+.pl-merknad {
+  padding: 11px 16px;
+}
+
+.pl-rad--alene {
+  background: rgba(240, 165, 0, 0.06);
+}
+
+.pl-badge-alene {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #f0a500;
+  background: rgba(240, 165, 0, 0.15);
+  border: 1px solid rgba(240, 165, 0, 0.4);
+  border-radius: 4px;
+  padding: 2px 8px;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}

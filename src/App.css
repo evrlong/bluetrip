@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0f0f0;
+  font-family: "Arial", sans-serif;
+}
+
+/* === NAVIGASJON === */
+.nav-bar {
+  display: flex;
+  gap: 8px;
+  padding: 16px 20px 0;
+  justify-content: center;
+}
+
+.nav-knapp {
+  padding: 10px 28px;
+  background: #e4e4e4;
+  color: #1a1a2e;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-knapp:hover {
+  background: #d0d0d0;
+}
+
+.nav-knapp--aktiv {
+  background: #1a1a2e;
+  color: #f0c040;
+}
+
+.nav-knapp--aktiv:hover {
+  background: #2d2d50;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+.print-knapp {
+  display: block;
+  margin: 20px auto 16px auto;
+  padding: 12px 32px;
+  background: #1a1a2e;
+  color: #f0c040;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.print-knapp:hover {
+  background: #2d2d50;
+}
+
+.app {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media screen {
+  .billett {
+    width: 210mm;
+    margin: 0 auto 4mm auto;
+  }
+}
+
+.billett {
+  width: 210mm;
+  height: calc(297mm / 3 - 2mm);
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* Tvinger nettleseren til å skrive ut bakgrunnsfarger */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.billett::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2mm;
+  left: 0;
+  right: 0;
+  border-bottom: 1px dashed #aaa;
+}
+
+.billett-topp {
+  background: #1a1a2e;
+  color: white;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.selg-logo {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
+  padding: 4px 8px;
+}
+
+.flyselskap {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #f0c040;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.billett-type {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.billett-innhold {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 16px;
+}
+
+.passasjer-seksjon {
+  display: flex;
+  flex-direction: column;
+}
+
+.etikett {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.verdi {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.navn {
+  font-size: 18px;
+}
+
+.rute-seksjon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.sted {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.sted-hoyre {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.tid {
+  font-size: 24px;
+  font-weight: 900;
+  color: #1a1a2e;
+  letter-spacing: 1px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.pil {
+  font-size: 20px;
+  color: #f0c040;
+  flex: 1;
+  text-align: center;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.detaljer-seksjon {
+  display: flex;
+  gap: 24px;
+}
+
+.reiser-alene-badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 3px 10px;
+  background: #fff3cd;
+  color: #7d5a00;
+  border: 1px solid #f0c040;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.detalj {
+  display: flex;
+  flex-direction: column;
+}
+
+.billett-bunn {
+  background: #f8f8f8;
+  border-top: 1px dashed #ccc;
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.strekkode-linjer {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 30px;
+}
+
+.linje {
+  height: 100%;
+  background: #1a1a2e;
+  border-radius: 1px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+@media print {
+  body {
+    background: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .app {
+    padding: 0;
+  }
+
+  .billett {
+    width: 210mm;
+    height: calc((297mm - 20mm) / 3);
+    border-radius: 8px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    margin-bottom: 10mm;
+    page-break-inside: avoid;
+  }
+
+  .billett:nth-child(3n) {
+    margin-bottom: 0;
+    page-break-after: always;
+  }
+
+  .billett::after {
+    display: none;
+  }
+}

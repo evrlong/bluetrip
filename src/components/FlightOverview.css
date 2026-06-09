@@ -1,0 +1,241 @@
+/* === FLIGHT OVERVIEW / AVGANGSTAVLE === */
+
+.fo-side {
+  min-height: 100vh;
+  background: #060d1a;
+  color: #e8e0c8;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.fo-header {
+  background: #0a1628;
+  border-bottom: 2px solid #1e3a5f;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.fo-flyplass {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #7aa3cc;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.fo-avganger-tittel {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #f0c040;
+  text-transform: uppercase;
+}
+
+.fo-header-hoyre {
+  text-align: right;
+}
+
+.fo-klokke {
+  font-size: 36px;
+  font-weight: 900;
+  color: #f0c040;
+  letter-spacing: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.fo-dato {
+  font-size: 12px;
+  color: #7aa3cc;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-top: 2px;
+}
+
+/* Table wrapper */
+.fo-tabell-wrapper {
+  flex: 1;
+  overflow-x: auto;
+  padding: 0 16px 16px;
+}
+
+/* Table */
+.fo-tabell {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+}
+
+.fo-tabell thead tr {
+  background: #0d1f38;
+  border-bottom: 2px solid #1e3a5f;
+}
+
+.fo-tabell th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5e8ab0;
+  font-weight: 600;
+}
+
+.fo-tabell tbody tr {
+  border-bottom: 1px solid #0f1e33;
+  transition: background 0.15s;
+}
+
+.fo-tabell tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.fo-tabell td {
+  padding: 16px 16px;
+  vertical-align: middle;
+}
+
+/* Row variants */
+.fo-rad--avgatt td {
+  opacity: 0.45;
+}
+
+.fo-rad--kansellert td {
+  opacity: 0.6;
+}
+
+.fo-rad--boarding {
+  background: rgba(240, 165, 0, 0.04);
+}
+
+.fo-rad--gaa-til-gate {
+  background: rgba(56, 189, 248, 0.04);
+}
+
+/* Cell specifics */
+.fo-tid {
+  font-size: 22px;
+  font-weight: 900;
+  color: #f0c040;
+  letter-spacing: 1px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.fo-destinasjon {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fo-by {
+  font-size: 16px;
+  font-weight: 700;
+  color: #e8e0c8;
+  letter-spacing: 0.5px;
+}
+
+.fo-kode {
+  font-size: 11px;
+  color: #5e8ab0;
+  letter-spacing: 2px;
+}
+
+.fo-flytnr {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a0b8d0;
+  letter-spacing: 1px;
+}
+
+.fo-flyselskap-celle {
+  min-width: 130px;
+}
+
+.fo-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.fo-airline-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.fo-airline-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.fo-gate {
+  font-size: 20px;
+  font-weight: 900;
+  color: #7de3c8;
+  letter-spacing: 1px;
+}
+
+.fo-gaa-til-gate {
+  font-size: 14px;
+  color: #a0b8d0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Status badge */
+.fo-status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.fo-blink {
+  animation: blink 1.2s step-start infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Footer */
+.fo-footer {
+  background: #0a1628;
+  border-top: 1px solid #1e3a5f;
+  padding: 12px 32px;
+  text-align: center;
+  font-size: 11px;
+  color: #3a5a7a;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Print */
+@media print {
+  .fo-side {
+    background: #060d1a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .fo-tabell tbody tr:hover {
+    background: none;
+  }
+}
