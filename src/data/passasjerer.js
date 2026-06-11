@@ -206,8 +206,8 @@ export const passasjerer = [
     logo: "/logos/selg-logo.png",
   },
   {
-    fornavn: "Maren",
-    etternavn: "Wartiainen",
+    fornavn: "Thor-Ivar",
+    etternavn: "Dalbakken",
     dato: "2026-06-15",
     destinasjon: "Mexico City",
     avreisested: "Eberg Lufthavn",
@@ -270,6 +270,16 @@ export const passasjerer = [
   {
     fornavn: "Hege Myhr",
     etternavn: "Amundsen",
+    dato: "2026-06-15",
+    destinasjon: "Paris CDG",
+    avreisested: "Eberg Lufthavn",
+    avreiseTid: "17:30",
+    landingTid: "19:55",
+    logo: "/logos/selg-logo.png",
+  },
+  {
+    fornavn: "Maren",
+    etternavn: "Wartiainen",
     dato: "2026-06-15",
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",
