@@ -70,6 +70,16 @@ export const passasjerer = [
     landingTid: "07:30",
     logo: "/logos/selg-logo.png",
   },
+  {
+    fornavn: "Åsmund",
+    etternavn: "Hiis Hauge",
+    dato: "2026-06-15",
+    destinasjon: "Tokyo Narita",
+    avreisested: "Eberg Lufthavn",
+    avreiseTid: "17:30",
+    landingTid: "07:30",
+    logo: "/logos/selg-logo.png", 
+  }
 
   // Frankfurt – SG422 (7 stk)
   {
@@ -280,6 +290,16 @@ export const passasjerer = [
   {
     fornavn: "Maren",
     etternavn: "Wartiainen",
+    dato: "2026-06-15",
+    destinasjon: "Paris CDG",
+    avreisested: "Eberg Lufthavn",
+    avreiseTid: "17:30",
+    landingTid: "19:55",
+    logo: "/logos/selg-logo.png",
+  },
+  {
+    fornavn: "Martin",
+    etternavn: "Skorstad",
     dato: "2026-06-15",
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",

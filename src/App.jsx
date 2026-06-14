@@ -4,6 +4,7 @@ import { flightruter } from "./data/overviewdata";
 import Billett from "./components/Billett";
 import FlightOverview from "./components/FlightOverview";
 import PassasjerListe from "./components/PassasjerListe";
+import Soundboard from "./components/Soundboard";
 import "./App.css";
 
 export default function App() {
@@ -30,6 +31,12 @@ export default function App() {
         >
           Passasjerlister
         </button>
+        <button
+          className={`nav-knapp ${side === "soundboard" ? "nav-knapp--aktiv" : ""}`}
+          onClick={() => setSide("soundboard")}
+        >
+          Soundboard
+        </button>
       </nav>
 
       {side === "billetter" && (
@@ -48,6 +55,7 @@ export default function App() {
 
       {side === "oversikt" && <FlightOverview />}
       {side === "passasjerer" && <PassasjerListe />}
+      {side === "soundboard" && <Soundboard />}
     </>
   );
 }
