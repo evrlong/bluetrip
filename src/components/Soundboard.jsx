@@ -9,24 +9,32 @@ const kategorier = [
 
 export default function Soundboard() {
   const [aktivId, setAktivId] = useState(null);
+  const [spiller, setSpiller] = useState(false);
   const audioRef = useRef(null);
 
   function spill(lyd) {
+    if (aktivId === lyd.id) {
+      if (spiller) {
+        audioRef.current.pause();
+        setSpiller(false);
+      } else {
+        audioRef.current.play().catch(() => {});
+        setSpiller(true);
+      }
+      return;
+    }
+
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
     }
 
-    if (aktivId === lyd.id) {
-      setAktivId(null);
-      return;
-    }
-
     const audio = new Audio(lyd.fil);
     audioRef.current = audio;
     audio.play().catch(() => {});
-    audio.onended = () => setAktivId(null);
+    audio.onended = () => { setAktivId(null); setSpiller(false); };
     setAktivId(lyd.id);
+    setSpiller(true);
   }
 
   return (
@@ -53,7 +61,7 @@ export default function Soundboard() {
                     onClick={() => spill(lyd)}
                   >
                     <span className="sb-knapp-ikon">
-                      {aktivId === lyd.id ? "⏹" : "▶"}
+                      {aktivId === lyd.id && spiller ? "⏸" : "▶"}
                     </span>
                     <span className="sb-knapp-navn">{lyd.navn}</span>
                   </button>

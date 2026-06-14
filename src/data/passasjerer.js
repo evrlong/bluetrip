@@ -7,7 +7,7 @@ export const passasjerer = [
     destinasjon: "Tokyo Narita",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "07:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -17,7 +17,7 @@ export const passasjerer = [
     destinasjon: "Tokyo Narita",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "07:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -27,7 +27,7 @@ export const passasjerer = [
     destinasjon: "Tokyo Narita",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "07:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -37,7 +37,7 @@ export const passasjerer = [
     destinasjon: "Tokyo Narita",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "07:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -47,7 +47,7 @@ export const passasjerer = [
     destinasjon: "Tokyo Narita",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "07:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -57,7 +57,7 @@ export const passasjerer = [
     destinasjon: "Tokyo Narita",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "07:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -67,7 +67,7 @@ export const passasjerer = [
     destinasjon: "Tokyo Narita",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "07:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -77,7 +77,7 @@ export const passasjerer = [
     destinasjon: "Tokyo Narita",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "07:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png", 
   },
 
@@ -89,7 +89,7 @@ export const passasjerer = [
     destinasjon: "Frankfurt",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:45",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -99,7 +99,7 @@ export const passasjerer = [
     destinasjon: "Frankfurt",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:45",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
     reiserAlene: true,
   },
@@ -110,7 +110,7 @@ export const passasjerer = [
     destinasjon: "Frankfurt",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:45",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -120,7 +120,7 @@ export const passasjerer = [
     destinasjon: "Frankfurt",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:45",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -130,7 +130,7 @@ export const passasjerer = [
     destinasjon: "Frankfurt",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:45",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -140,7 +140,7 @@ export const passasjerer = [
     destinasjon: "Frankfurt",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:45",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -150,7 +150,7 @@ export const passasjerer = [
     destinasjon: "Frankfurt",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:45",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
 
@@ -162,7 +162,7 @@ export const passasjerer = [
     destinasjon: "Mexico City",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "05:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -172,7 +172,7 @@ export const passasjerer = [
     destinasjon: "Mexico City",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "05:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -182,7 +182,7 @@ export const passasjerer = [
     destinasjon: "Mexico City",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "05:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -192,7 +192,7 @@ export const passasjerer = [
     destinasjon: "Mexico City",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "05:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -202,7 +202,7 @@ export const passasjerer = [
     destinasjon: "Mexico City",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "05:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -212,7 +212,7 @@ export const passasjerer = [
     destinasjon: "Mexico City",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "05:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -222,7 +222,7 @@ export const passasjerer = [
     destinasjon: "Mexico City",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "05:30",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
 
@@ -234,7 +234,7 @@ export const passasjerer = [
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:55",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -244,7 +244,7 @@ export const passasjerer = [
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:55",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -254,7 +254,7 @@ export const passasjerer = [
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:55",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -264,7 +264,7 @@ export const passasjerer = [
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:55",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -274,7 +274,7 @@ export const passasjerer = [
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:55",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -284,7 +284,7 @@ export const passasjerer = [
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:55",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -294,7 +294,7 @@ export const passasjerer = [
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:55",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
   {
@@ -304,7 +304,7 @@ export const passasjerer = [
     destinasjon: "Paris CDG",
     avreisested: "Eberg Lufthavn",
     avreiseTid: "17:30",
-    landingTid: "19:55",
+    landingTid: "18:30",
     logo: "/logos/selg-logo.png",
   },
 ];
