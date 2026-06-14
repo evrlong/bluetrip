@@ -79,7 +79,7 @@ export const passasjerer = [
     avreiseTid: "17:30",
     landingTid: "07:30",
     logo: "/logos/selg-logo.png", 
-  }
+  },
 
   // Frankfurt – SG422 (7 stk)
   {
