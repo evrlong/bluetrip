@@ -22,7 +22,7 @@ export const flightruter = [
     flyselskap: "Air France",
     flyselskapFarger: { bg: "#002157", tekst: "#ffffff" },
     harLogo: false,
-    gate: "B14",
+    gate: "A67",
     gaaTilGate: "21:05",
     avgang: "21:32",
     statusOverride: null,
