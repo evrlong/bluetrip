@@ -154,7 +154,17 @@ export const passasjerer = [
     logo: "/logos/selg-logo.png",
   },
 
-  // Mexico City – SG631 (7 stk)
+  // Mexico City – SG631 (8 stk)
+   {
+    fornavn: "Terje",
+    etternavn: "Moa",
+    dato: "2026-06-15",
+    destinasjon: "Mexico City",
+    avreisested: "Eberg Lufthavn",
+    avreiseTid: "17:30",
+    landingTid: "18:30",
+    logo: "/logos/selg-logo.png",
+  },
   {
     fornavn: "Usha",
     etternavn: "Mahe",
