@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8" />
+<title>Reiser alene – Andreas Neira</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 210mm;
+    height: 297mm;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+  }
+
+  .ark {
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14mm 12mm 10mm;
+  }
+
+  /* Hull-guide for snor i toppen */
+  .hull-rad {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100mm;
+    margin-bottom: 4mm;
+  }
+  .hull {
+    width: 7mm;
+    height: 7mm;
+    border: 1.5px dashed #999;
+    border-radius: 50%;
+  }
+  .hull-tekst {
+    text-align: center;
+    font-size: 8px;
+    color: #999;
+    letter-spacing: 0.5px;
+    margin-bottom: 6mm;
+  }
+
+  .skilt {
+    width: 100%;
+    flex: 1;
+    border: 3px solid #1a1a2e;
+    border-radius: 10mm;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0 2px #f0c040 inset;
+  }
+
+  .header {
+    background: #1a1a2e;
+    color: #f0c040;
+    padding: 6mm 8mm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 4mm;
+  }
+  .header-logo img {
+    height: 14mm;
+    object-fit: contain;
+  }
+  .header-tittel {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  .header-rute {
+    text-align: right;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .hovedinnhold {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8mm 10mm;
+    gap: 6mm;
+  }
+
+  .varsel-ikon {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .varsel-no {
+    font-size: 44px;
+    font-weight: 900;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .varsel-en {
+    font-size: 18px;
+    font-weight: 700;
+    color: #d82027;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .navn-boks {
+    margin-top: 4mm;
+    border-top: 2px dashed #1a1a2e;
+    border-bottom: 2px dashed #1a1a2e;
+    padding: 6mm 0;
+    width: 100%;
+  }
+  .navn-etikett {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #777;
+    text-transform: uppercase;
+  }
+  .navn {
+    font-size: 46px;
+    font-weight: 900;
+    color: #1a1a2e;
+    margin: 2mm 0 0;
+  }
+
+  .detaljer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4mm;
+    margin-top: 2mm;
+  }
+  .detalj {
+    flex: 1;
+    text-align: center;
+  }
+  .detalj .etikett {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #888;
+    text-transform: uppercase;
+    display: block;
+  }
+  .detalj .verdi {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    display: block;
+    margin-top: 1mm;
+  }
+
+  .melding {
+    margin-top: 4mm;
+    font-size: 12px;
+    font-style: italic;
+    color: #444;
+    max-width: 140mm;
+    line-height: 1.5;
+  }
+
+  .footer {
+    background: #f0c040;
+    color: #1a1a2e;
+    padding: 4mm 8mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+  <div class="ark">
+    <div class="hull-rad">
+      <div class="hull"></div>
+      <div class="hull"></div>
+    </div>
+    <div class="hull-tekst">✂ HULL TIL SNOR — TRE SNOR HER OG HENG RUNDT NAKKEN</div>
+
+    <div class="skilt">
+      <div class="header">
+        <div class="header-logo">
+          <img src="/logos/selg-logo.png" alt="SELG" />
+          <div class="header-tittel">SELG AIRLINES</div>
+        </div>
+        <div class="header-rute">
+          Eberg Lufthavn → Frankfurt<br />
+          Flight SG422
+        </div>
+      </div>
+
+      <div class="hovedinnhold">
+        <div class="varsel-ikon">⚠️✈️</div>
+        <h1 class="varsel-no">REISER ALENE</h1>
+        <div class="varsel-en">Unaccompanied Passenger</div>
+
+        <div class="navn-boks">
+          <div class="navn-etikett">Passasjer</div>
+          <div class="navn">Andreas Neira</div>
+        </div>
+
+        <div class="detaljer">
+          <div class="detalj">
+            <span class="etikett">Dato</span>
+            <span class="verdi">15. juni 2026</span>
+          </div>
+          <div class="detalj">
+            <span class="etikett">Avgang</span>
+            <span class="verdi">17:30</span>
+          </div>
+          <div class="detalj">
+            <span class="etikett">Destinasjon</span>
+            <span class="verdi">Frankfurt (FRA)</span>
+          </div>
+        </div>
+
+        <div class="melding">
+          Denne passasjeren reiser uten følge og kan bli usikker på vei til bar,
+          dansegulv eller toalett. Vennligst ta godt vare på ham og sørg for at han
+          finner trygt frem gjennom kvelden. Takk for hjelpen! 🛫🥂
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>SELG AIRLINES · BLÅTUR 2026</span>
+        <span>EBERG LUFTHAVN</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

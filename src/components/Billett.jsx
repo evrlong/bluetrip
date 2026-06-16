@@ -1,11 +1,4 @@
-import { useMemo } from "react";
-
 export default function Billett({ fornavn, etternavn, dato, destinasjon, avreisested, avreiseTid, landingTid, logo, reiserAlene, gate }) {
-  const strekkodeLinjer = useMemo(
-    () => Array.from({ length: 40 }, () => Math.random() * 3 + 1),
-    []
-  );
-
   const formatDato = (datoStr) => {
     const d = new Date(datoStr);
     return d.toLocaleDateString("nb-NO", { day: "2-digit", month: "long", year: "numeric" });
@@ -68,8 +61,8 @@ export default function Billett({ fornavn, etternavn, dato, destinasjon, avreise
       <div className="billett-bunn">
         <div className="strekkode">
           <div className="strekkode-linjer">
-            {strekkodeLinjer.map((w, i) => (
-              <div key={i} className="linje" style={{ width: `${w}px` }} />
+            {Array.from({ length: 40 }).map((_, i) => (
+              <div key={i} className="linje" style={{ width: `${Math.random() * 3 + 1}px` }} />
             ))}
           </div>
         </div>

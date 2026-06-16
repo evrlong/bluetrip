@@ -37,6 +37,14 @@ export default function App() {
         >
           Soundboard
         </button>
+        <a
+          className="nav-knapp"
+          href="/skilt-reiser-alene-andreas.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reiser alene-skilt
+        </a>
       </nav>
 
       {side === "billetter" && (
