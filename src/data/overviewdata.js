@@ -36,8 +36,8 @@ export const flightruter = [
     flyselskapFarger: { bg: "#002157", tekst: "#ffffff" },
     harLogo: false,
     gate: "C4",
-    gaaTilGate: "16:00",
-    avgang: "16:15",
+    gaaTilGate: "16:50",
+    avgang: "17:05",
     statusOverride: null,
   },
   {
