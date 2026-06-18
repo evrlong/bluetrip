@@ -45,6 +45,14 @@ export default function App() {
         >
           Reiser alene-skilt
         </a>
+        <a
+          className="nav-knapp"
+          href="/gate-a67.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Gate A67-skilt
+        </a>
       </nav>
 
       {side === "billetter" && (

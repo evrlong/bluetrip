@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8" />
+<title>Gate A67</title>
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 297mm;
+    height: 210mm;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skilt {
+    width: 275mm;
+    height: 188mm;
+    background: #f5b800;
+    border-radius: 6mm;
+    display: flex;
+    align-items: center;
+    padding: 0 20mm;
+    gap: 16mm;
+    position: relative;
+  }
+
+  .venstre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5mm;
+    flex-shrink: 0;
+  }
+
+  .fly-boks {
+    width: 50mm;
+    height: 50mm;
+    border: 4mm solid #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fly-boks svg {
+    width: 36mm;
+    height: 36mm;
+    fill: #1a1a1a;
+  }
+
+  .gate-tekst {
+    font-family: "Arial Black", "Arial", sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: #1a1a1a;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  .gate-nummer {
+    font-family: "Arial Black", "Arial", sans-serif;
+    font-size: 330px;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 0.85;
+    letter-spacing: -6px;
+    flex: 1;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+  <div class="skilt">
+    <div class="venstre">
+      <div class="fly-boks">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <g transform="rotate(45, 50, 50)">
+            <!-- Fuselage -->
+            <path d="M50,6 C53,6 55,12 55,30 L54,58 L50,68 L46,58 L45,30 C45,12 47,6 50,6Z" />
+            <!-- Left wing -->
+            <path d="M47,35 L3,60 L6,66 L47,52Z" />
+            <!-- Right wing -->
+            <path d="M53,35 L97,60 L94,66 L53,52Z" />
+            <!-- Left tail fin -->
+            <path d="M47,72 L24,88 L26,92 L48,78Z" />
+            <!-- Right tail fin -->
+            <path d="M53,72 L76,88 L74,92 L52,78Z" />
+          </g>
+        </svg>
+      </div>
+      <div class="gate-tekst">Gate</div>
+    </div>
+    <div class="gate-nummer">A67</div>
+  </div>
+</body>
+</html>
