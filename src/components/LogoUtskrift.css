@@ -1,0 +1,204 @@
+.lu-side {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.lu-tittel {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.lu-beskrivelse {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.lu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.lu-kort {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  min-width: 200px;
+}
+
+.lu-forhandsvis {
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.lu-forhandsvis img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.lu-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.lu-navn {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: 0.5px;
+}
+
+.lu-maal {
+  font-size: 12px;
+  color: #888;
+}
+
+.lu-knapp {
+  padding: 9px 28px;
+  background: #077e87;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  width: 100%;
+}
+
+.lu-knapp:hover {
+  background: #055f66;
+}
+
+a.lu-knapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.lu-seksjon-divider {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  margin: 40px 0 32px;
+}
+
+.lu-tittel--liten {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+/* Skilt-forhåndsvisninger */
+.lu-forhandsvis--skilt {
+  background: transparent !important;
+  border: 2px solid #e4e4e4;
+}
+
+.lu-prev-gate {
+  width: 100%;
+  height: 100%;
+  background: #f5b800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 4px;
+}
+.lu-prev-gate-fly {
+  font-size: 20px;
+}
+.lu-prev-gate-nr {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.lu-prev-lounge {
+  width: 100%;
+  height: 100%;
+  background: #077e87;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 4px;
+  padding: 8px;
+}
+.lu-prev-lounge img {
+  width: 70%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+.lu-prev-lounge span {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #f0e080;
+}
+
+.lu-prev-toalett {
+  width: 100%;
+  height: 100%;
+  background: #077e87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 4px;
+}
+.lu-prev-toalett span {
+  font-size: 36px;
+  color: #fff;
+}
+.lu-prev-toalett-linje {
+  width: 1px;
+  height: 50px;
+  background: rgba(255,255,255,0.3);
+}
+
+.lu-prev-alene {
+  width: 100%;
+  height: 100%;
+  background: #1a1a2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 4px;
+  padding: 8px;
+}
+.lu-prev-alene span:first-child {
+  font-size: 22px;
+}
+.lu-prev-alene span:last-child {
+  font-size: 11px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}

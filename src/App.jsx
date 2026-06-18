@@ -5,6 +5,7 @@ import Billett from "./components/Billett";
 import FlightOverview from "./components/FlightOverview";
 import PassasjerListe from "./components/PassasjerListe";
 import Soundboard from "./components/Soundboard";
+import LogoUtskrift from "./components/LogoUtskrift";
 import "./App.css";
 
 export default function App() {
@@ -37,22 +38,12 @@ export default function App() {
         >
           Soundboard
         </button>
-        <a
-          className="nav-knapp"
-          href="/skilt-reiser-alene-andreas.html"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          className={`nav-knapp ${side === "logo" ? "nav-knapp--aktiv" : ""}`}
+          onClick={() => setSide("logo")}
         >
-          Reiser alene-skilt
-        </a>
-        <a
-          className="nav-knapp"
-          href="/gate-a67.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Gate A67-skilt
-        </a>
+          Utskrifter
+        </button>
       </nav>
 
       {side === "billetter" && (
@@ -72,6 +63,7 @@ export default function App() {
       {side === "oversikt" && <FlightOverview />}
       {side === "passasjerer" && <PassasjerListe />}
       {side === "soundboard" && <Soundboard />}
+      {side === "logo" && <LogoUtskrift />}
     </>
   );
 }
